@@ -33,7 +33,7 @@ class Vector {
         double coords[3];
 };
 
-// Surcharge d'opérateur
+// Surcharge d'opÃ©rateur
 Vector operator+(const Vector &a, const Vector &b) {
     return Vector(a[0] + b[0], a[1] + b[1], a[2] + b[2]);
 }
@@ -327,9 +327,9 @@ public:
 
 
 int main() {
-    int W = 256;
-    int H = 256;
-    int nb_rays = 10;
+    int W = 512;
+    int H = 512;
+    int nb_rays = 100;
 
     Vector C(0,0,55);
     Scene scene;
@@ -338,7 +338,7 @@ int main() {
     double angle = 60;
     double alpha = angle * M_PI / 180;
 
-    // Objets de la scène
+    // Objets de la scÃ¨ne
     Sphere Lumiere(scene.L, 5, Vector(1.,1.,1.));
     Sphere S1(Vector(0, 0, 0), 7, Vector(1, 1, 1), false, false);
     Sphere S2(Vector(-15, 10, 0), 7, Vector(1., 1., 0.5), true, false);
